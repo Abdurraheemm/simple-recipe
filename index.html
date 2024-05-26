@@ -12,6 +12,9 @@
   <style> 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
 body{
   background-color: #F1E5D1;
@@ -22,30 +25,57 @@ body{
   height: 100%;
   padding: 20px;
   margin: auto;
+  border-radius: 10px;
+}
+img{
+  border-radius: 10px;
 }
 .box1 div{
-  background-color: #e7dee8;
+  background-color: #FFF7FB;
   padding-left: 15px;
   padding-top: 2px;
   padding-bottom: 1px;
+  border-radius: 10px;
 
 }
+ol li::before{
+  color: darkred;
+  font-weight: bold;
+}
+
 h1{
   color: darkred;
+  font-family:sans;
 }
 h2{
   color: darkred;
+  font-family:sans;
 }
 h4{
-  color: #6C0345;
+  color: #7A284E;
+  font-family: arial;
+
+}
+pre{
+  font-family:sans;
+}
+.cal{
+  color: darkred;
+  font-weight: bold;
   font-family: sans-serif;
 }
-/* p{
-  font-family: ;
-  font-family: ;
-  opacity: 0.80;
-} */
-@media (max-width)
+.lst{
+  color:#5F564D ;
+  font-weight: bold;
+}
+li::marker {
+  color: darkred;
+}
+
+
+
+
+
 
 </style>
 
@@ -53,7 +83,7 @@ h4{
 </head>
 <body>
 <div class="box1">
-  <img src="./image-omelette.jpeg" width="400px" height="200" alt="omelette image">
+  <img src="./image-omelette.jpeg" width="400px" height="200"  alt="omelette image">
 
   <h1>Simple Omelette Recipe</h1>
 
@@ -62,14 +92,14 @@ h4{
 
   <div>
   <h4>Preparation time</h4>
-  <ul>
-    <li>Total: Approximately 10 minutes</li>
-    <li>Preparation: 5 minutes</li>
-    <li>Cooking: 5 minutes</li>
+  <ul style="color: #5F564D;">
+    <li><b>Total:</b> Approximately 10 minutes</li>
+    <li><b>Preparation:</b> 5 minutes</li>
+    <li><b>Cooking:</b> 5 minutes</li>
   </ul>
   </div>
   <h2>Ingredients</h2>
-  <ul>
+  <ul style="color: #5F564D;">
     <li>2-3 large eggs</li>
     <li>Salt, to taste</li>
     <li>Pepper, to taste</li>
@@ -80,38 +110,37 @@ h4{
 
  <h2> Instructions</h2>
 
- <ol>
-  <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+ <ol style="color: #5F564D;">
+  <li><span class="lst">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
   You can add a tablespoon of water or milk for a fluffier texture.</li>
-  <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-  <li> Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  <li><span class="lst">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+  <li> <span class="lst">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
   the eggs evenly coat the surface.</li>
-  <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+  <li><span class="lst">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
   middle, sprinkle your chosen fillings over one half of the omelette.</li>
-  <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+  <li><span class="lst">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
   fillings. Let it cook for another minute, then slide it onto a plate.</li>
-  <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+  <li><span class="lst">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
  </ol>
  <hr>
 
   <h2>Nutrition</h2>
 
-  <p>The table below shows nutritional values per serving without the additional fillings.</p>
+  <p style="color: #5F564D;">The table below shows nutritional values per serving without the additional fillings.</p>
 
-  Calories
-  277kcal
+  <pre>Calories                          <span class="cal">277kcal</span> </pre>
   <hr>
 
-  Carbs
-  0g
+ 
+  <pre>Carbs                              <span class="cal">0g</span> </pre>
   <hr>
 
-  Protein
-  20g
+  
+  <pre>Protein                            <span class="cal">20g</span> </pre>
   <hr>
 
-  Fat
-  22g
+  
+  <pre>Fat                                   <span class="cal">22g</span> </pre>
 </div>
   
   <div class="attribution">
